@@ -1,0 +1,15 @@
+set-b
+Q1. Create folowing table: -
+cousrce(bookid,bookname,pre_requsite)
+facalaty(facaty_id,facltay _name,faclt_phoneno)
+department(derp_id,departent_name,loc)
+
+Q2 Insert 5 rows
+
+Q3
+
+1)display the name of facalty sal>20000
+2)cal the total no of sal for the facalty teaching in dept cse
+3)display the loc and dept name for course id 1 
+
+{<s>|(Ed)(facalty(a,b,c,d))(departmet(e,f,g,h,i))}

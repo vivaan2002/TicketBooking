@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THE TOUR X</title>
+        <style>
+            body{
+                animation: lcolor 10s infinite;
+            }
+
+            @keyframes lcolor {
+                0% {background-color: red;}
+                25% {background-color: yellow;}
+                50% {background-color: green;}
+                75% {background-color: brown;}
+                100% {background-color: red;}
+            }
+        </style>
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="nav">
+            <div class="w3-top">
+                <div class="w3-bar w3-black w3-card">
+                  <a class="w3-bar-item w3-button padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                  <a href="#" class="w3-bar-item w3-button padding-large">HOME</a>
+                  <a href="#" class="w3-bar-item w3-button padding-large w3-hide-small" onclick="document.getElementById('ticketcaap').style.display='block'">Approve Cancelation</a>
+                  <a href="#" class="w3-bar-item w3-button padding-large w3-hide-small">Cancel Tickets</a>
+                  
+                </div>
+            </div>
+        </div>
+
+        <!-- Aprove Cancelation-->
+        <div id="ticketcaap" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                <span onclick="document.getElementById('ticketcaap').style.display='none'" 
+            class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Cancel Tickets</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-user"></i>Enter Cancelation Details :-</label></p>
+                <form action="apcatk" method="post" enctype="multipart/form-data">
+                <label for="">Cancelation Id :-</label><br>  
+                <input class="w3-input w3-border" type="number" name="CancelId" id="cancelid" placeholder="CancelId"><br>
+                <label for="">Booking Id:-</label><br>  
+                <input class="w3-input w3-border" type="number" name="BookingId" id="bookingid" placeholder="BookingId"><br>
+                <label for="">Email Id:-</label><br>          
+                <input class="w3-input w3-border" type="email" name="email" placeholder="Enter email" required><br>
+                <input class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit" value="Cancel Ticket">
+                </form>
+
+
+                
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketcaap').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+            </div>
+        </div>
+        <!-- Aprove Cancelation-->
+            
+    </body>
+    <script>
+    
+        // var myIndex = 0;
+        // carousel();
+    
+        // function carousel() {
+        // var i;
+        // var x = document.getElementsByClassName("mySlides");
+        // for (i = 0; i < x.length; i++) {
+        //     x[i].style.display = "none";  
+        // }
+        // myIndex++;
+        // if (myIndex > x.length) {myIndex = 1}    
+        // x[myIndex-1].style.display = "block";  
+        // setTimeout(carousel, 4000);    
+        // }
+        
+        
+        function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+    </script>
+</html>

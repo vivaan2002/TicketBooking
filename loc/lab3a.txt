@@ -1,0 +1,24 @@
+use vivaanmittal2k20csun01124;
+insert into client
+values (c01,xyz,Delhi);
+insert into client
+values (c02,abc,Fbd);
+insert into client
+values (c03,def,Delhi);
+insert into client
+values (c04,ghi,Ggn);
+insert into client
+values (c05,klm,Fbd);
+insert into client
+values (c06,nop,Delhi);
+
+
+use vivaanmittal2k20csun01124;
+insert into project
+value(p01,ab,01/01/2006,c01);
+insert into project
+value(p02,bc,01/02/2006,c02);
+insert into project
+value(p03,cd,20/04/2005,c02);
+insert into project
+value(p04,de,01/01/2004,c03);
